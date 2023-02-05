@@ -2,10 +2,10 @@ function Pokemon({ data, index, click }) {
   return (
     <div className="pokemon" onClick={() => {click(index)}}>
       <img
-        src={data && data.sprites.front_default}
-        alt={data && data.name}
+        src={data.name && data.sprites.front_default}
+        alt={data.name && data.name}
       />
-      <h1>{data && data.name}</h1>
+      <h1>{data.name && data.name}</h1>
     </div>
   )
 }

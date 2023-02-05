@@ -11,10 +11,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 70px 20px;
   min-height: 100vh;
   background: linear-gradient(to right, #c2e59c, #64b3f4);
 
+}
+
+.search-box {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-box form input {
+  border-radius: 5px;
+  border: solid 1px #000;
+  height: 30px;
+  padding-left: 10px;
 }
 
 .pokedex {
@@ -22,6 +36,8 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 200px);
   gap: 20px;
+
+  position: relative;
 }
 
 .pokedex .pokemon {
@@ -32,6 +48,26 @@
 
   background: #eee;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.next-page-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-page-box button {
+  height: 30px;
+  width: 70px;
+  font-weight: bold;
+  border: solid 1px #000;
+  border-radius: 5px;
   cursor: pointer;
 }
 
