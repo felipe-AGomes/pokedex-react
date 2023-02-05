@@ -13,21 +13,21 @@ function PokemonModal({ modal, click }) {
         <h1>{data && data.name}</h1>
       </div>
       <div className="description">
-        <p>Nome: {data && data.name}</p>
-        <p>Peso: {data && data.weight} Kg</p>
+        <p>Name: {data && data.name}</p>
+        <p>Weight: {data && data.weight} Kg</p>
         <div className="list">
-          <p className="title">Habilidades: </p>
+          <p className="title">Abilities: </p>
           <ul>
             {data && data.abilities.map((e) => {
-              return <li>{e.ability.name}</li>
+              return <li key={e.ability.name}>{e.ability.name}</li>
             })}
           </ul>
         </div>
         <div className="list">
-          <p className="title">Tipo:</p>  
+          <p className="title">Type:</p>  
           <ul>
           {data && data.types.map((e) => {
-              return <li>{e.type.name}</li>
+              return <li key={e.type.name}>{e.type.name}</li>
             })}
           </ul>
         </div>

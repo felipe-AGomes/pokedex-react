@@ -9,7 +9,7 @@
 
 #root {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 70px 20px;
   min-height: 100vh;
@@ -34,9 +34,9 @@
 .pokedex {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 200px);
   gap: 20px;
 
+  width: 100%;
   position: relative;
 }
 

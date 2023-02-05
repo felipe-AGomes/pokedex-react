@@ -5,7 +5,7 @@ function Pokemon({ data, index, click }) {
         src={data.name && data.sprites.front_default}
         alt={data.name && data.name}
       />
-      <h1>{data.name && data.name}</h1>
+      <h1>{data.name && data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
     </div>
   )
 }
